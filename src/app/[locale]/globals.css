@@ -5,6 +5,21 @@
   --font-funnel: "Funnel Sans", ui-sans-serif, system-ui;
   --font-mona: "Mona Sans", ui-sans-serif, system-ui;
   --font-sans: var(--font-inter-tight);
+
+  /* Color palette (from Figma) */
+  --color-black: #000000;
+  --color-black-1: #0f0f0f;
+  --color-black-2: #1a1919;
+  --color-black-3: #2f2e2e;
+  --color-white: #ffffff;
+  --color-white-1: #f0f0f0;
+  --color-white-2: #d5d7d4;
+  --color-white-3: #b3b6b1;
+  --color-green: #4b5320;
+  --color-green-1: #8f985f;
+  --color-green-2: #b3bb88;
+  --color-green-3: #d1dbb0;
+  --color-white-25: rgba(255, 255, 255, 0.25);
 }
 
 @font-face {
@@ -66,6 +81,8 @@
 @layer base {
   body {
     font-family: var(--font-sans);
+    background-color: #000;
+    color: #fff;
   }
 }
 
@@ -172,4 +189,73 @@
   .text-numerals-m {
     @apply font-normal text-[2.5rem] leading-none tracking-[-0.05em] font-inter-tight;
   }
+
+  /* .bg-black-1 {
+    background-color: var(--color-black-1);
+  }
+  .bg-black-2 {
+    background-color: var(--color-black-2);
+  }
+  .bg-black-3 {
+    background-color: var(--color-black-3);
+  }
+  .bg-white-1 {
+    background-color: var(--color-white-1);
+  }
+  .bg-white-2 {
+    background-color: var(--color-white-2);
+  }
+  .bg-white-3 {
+    background-color: var(--color-white-3);
+  }
+  .bg-green {
+    background-color: var(--color-green);
+  }
+  .bg-green-1 {
+    background-color: var(--color-green-1);
+  }
+  .bg-green-2 {
+    background-color: var(--color-green-2);
+  }
+  .bg-green-3 {
+    background-color: var(--color-green-3);
+  }
+  .bg-white-25 {
+    background-color: var(--color-white-25);
+  }
+
+  .text-black-1 {
+    color: var(--color-black-1);
+  }
+  .text-black-2 {
+    color: var(--color-black-2);
+  }
+  .text-black-3 {
+    color: var(--color-black-3);
+  }
+  .text-white-1 {
+    color: var(--color-white-1);
+  }
+  .text-white-2 {
+    color: var(--color-white-2);
+  }
+  .text-white-3 {
+    color: var(--color-white-3);
+  }
+  .text-green {
+    color: var(--color-green);
+  }
+  .text-green-1 {
+    color: var(--color-green-1);
+  }
+  .text-green-2 {
+    color: var(--color-green-2);
+  }
+  .text-green-3 {
+    color: var(--color-green-3);
+  }
+
+  .border-white-25 {
+    border-color: var(--color-white-25);
+  } */
 }
