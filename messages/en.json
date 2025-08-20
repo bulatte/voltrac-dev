@@ -1,0 +1,11 @@
+{
+  "home": {
+    "hello": "Hello, World!"
+  },
+  "common": {
+    "metadata": {
+      "title": "My App",
+      "description": "This is my app"
+    }
+  }
+}
