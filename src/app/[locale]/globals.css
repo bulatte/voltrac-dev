@@ -1,26 +1,175 @@
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-inter-tight: "Inter Tight", ui-sans-serif, system-ui;
+  --font-funnel: "Funnel Sans", ui-sans-serif, system-ui;
+  --font-mona: "Mona Sans", ui-sans-serif, system-ui;
+  --font-sans: var(--font-inter-tight);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Funnel Sans";
+  src: url("/fonts/FunnelSans-Light.woff2") format("woff2"),
+    url("/fonts/FunnelSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: "Funnel Sans";
+  src: url("/fonts/FunnelSans-Regular.woff2") format("woff2"),
+    url("/fonts/FunnelSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/InterTight-Light.woff2") format("woff2"),
+    url("/fonts/InterTight-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/InterTight-Regular.woff2") format("woff2"),
+    url("/fonts/InterTight-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/InterTight-Medium.woff2") format("woff2"),
+    url("/fonts/InterTight-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/InterTight-SemiBold.woff2") format("woff2"),
+    url("/fonts/InterTight-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/InterTight-Bold.woff2") format("woff2"),
+    url("/fonts/InterTight-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+@layer utilities {
+  .font-inter-tight {
+    font-family: var(--font-inter-tight);
+  }
+  .font-funnel {
+    font-family: var(--font-funnel);
+  }
+  .font-mona {
+    font-family: var(--font-mona);
+  }
+
+  /* Display styles (very large) */
+  .text-display-xl {
+    @apply font-light text-[15rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+  .text-display-l {
+    @apply font-light text-[10rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+  .text-display-m {
+    @apply font-light text-[8.75rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+  .text-display-s {
+    @apply font-light text-[7.5rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+  .text-display-xs {
+    @apply font-light text-[6.25rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+
+  /* Title styles */
+  .text-title-xl {
+    @apply font-light text-[3.75rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+  .text-title-l {
+    @apply font-light text-[3.125rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+  .text-title-m {
+    @apply font-light text-[2.5rem] leading-none tracking-[-0.05em] font-funnel;
+  }
+  .text-title-s {
+    @apply font-normal text-2xl leading-none tracking-[-0.03em] font-funnel;
+  }
+  .text-title-xs {
+    @apply font-normal text-[1.125rem] leading-none tracking-[-0.03em] font-funnel;
+  }
+  .text-paragraph-l {
+    @apply font-normal text-[1.375rem] leading-normal;
+  }
+  .text-paragraph-m {
+    @apply font-normal text-lg leading-normal;
+  }
+  .text-paragraph-s {
+    @apply font-normal text-sm leading-normal;
+  }
+
+  /* Support styles */
+  .text-overline {
+    @apply font-medium text-[0.5rem] leading-none font-mona uppercase;
+  }
+  .text-subtitle-l {
+    @apply font-semibold text-[0.875rem] leading-[1] font-inter-tight uppercase;
+  }
+  .text-subtitle-l-spaced {
+    @apply font-semibold text-[0.875rem] leading-[1] tracking-[0.175em] font-inter-tight uppercase;
+  }
+  .text-subtitle-m {
+    @apply font-semibold text-[0.75rem] leading-[1] font-inter-tight uppercase;
+  }
+  .text-subtitle-m-spaced {
+    @apply font-semibold text-[0.75rem] leading-[1] tracking-[0.15em] font-inter-tight uppercase;
+  }
+  .text-subtitle-s {
+    @apply font-semibold text-[0.625rem] leading-[1] font-inter-tight uppercase;
+  }
+  .text-subtitle-s-spaced {
+    @apply font-semibold text-[0.625rem] leading-[1] tracking-[0.15em] font-inter-tight uppercase;
+  }
+
+  /* Numerals (large numeric display sizes) */
+  .text-numerals-2x-large {
+    @apply font-light text-[7.5rem] leading-none tracking-[-0.05em];
+  }
+  .text-numerals-xl {
+    @apply font-light text-[5rem] leading-none tracking-[-0.05em];
+  }
+  .text-numerals-large {
+    @apply font-normal text-[3.75rem] leading-none tracking-[-0.05em];
+  }
+  .text-numerals-medium {
+    @apply font-normal text-[2.5rem] leading-none tracking-[-0.05em];
+  }
+  /* Numerals styles */
+  .text-numerals-xxl {
+    @apply font-light text-[7.5rem] leading-none tracking-[-0.05em] font-inter-tight;
+  }
+  .text-numerals-xl {
+    @apply font-light text-[5rem] leading-none tracking-[-0.05em] font-inter-tight;
+  }
+  .text-numerals-l {
+    @apply font-normal text-[3.75rem] leading-none tracking-[-0.05em] font-inter-tight;
+  }
+  .text-numerals-m {
+    @apply font-normal text-[2.5rem] leading-none tracking-[-0.05em] font-inter-tight;
+  }
+}
