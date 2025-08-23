@@ -1,0 +1,36 @@
+{
+  "home": {
+    "about": {
+      "title": "THOR is de volgende generatie geautomatiseerde elektrische tractor, gebouwd voor zwaar werk en zwaardere omstandigheden.",
+      "benefits": {
+        "reliable": {
+          "title": "Betrouwbaarder",
+          "text": "Minder onderdelen, minder olie en een modulair ontwerp dat het mogelijk maakt om een motor te vervangen door de beschermplaten, acht bouten en twee kabels los te maken."
+        },
+        "cost-efficient": {
+          "title": "Goedkoper in gebruik",
+          "text": "Dezelfde aanschafkosten als vergelijkbare 80kW-tractoren, goedkoper per jaar in gebruik."
+        },
+        "non-stop": {
+          "title": "Rond-de-klok-activiteiten",
+          "text": "Verwisselbare 200kW-batterijen maken continu gebruik mogelijk, zelfs bij zware taken."
+        },
+        "compatible": {
+          "title": "Volledig compatibel",
+          "text": "Onze driepuntsbok in categorie 2, ISO 730-1, maakt het gebruik van je favoriete tractorwerktuigen mogelijk."
+        }
+      },
+      "stats": {
+        "all-wheel-power": "Vierwielaandrijving",
+        "operational-time": "Operationele tijd",
+        "cargo-capacity": "Laadvermogen"
+      }
+    }
+  },
+  "common": {
+    "metadata": {
+      "title": "Mijn applicatie",
+      "description": "Dit is mijn applicatie"
+    }
+  }
+}

@@ -1,6 +1,31 @@
 {
   "home": {
-    "hello": "Hallo"
+    "about": {
+      "title": "THOR ist der automatisierte Elektrotraktor der nächsten Generation, der für harte Arbeit und raue Bedingungen entwickelt wurde.",
+      "benefits": {
+        "reliable": {
+          "title": "Zuverlässiger",
+          "text": "Weniger Bauteile, weniger Öl und ein modulares Design, das den Austausch eines Motors durch das Entfernen der Abdeckungen, acht Schrauben und zwei Kabel ermöglicht."
+        },
+        "cost-efficient": {
+          "title": "Günstiger im Betrieb",
+          "text": "Gleiche Anschaffungskosten wie vergleichbare 80-kW-Traktoren, günstigere Betriebskosten pro Jahr."
+        },
+        "non-stop": {
+          "title": "Rund-um-die-Uhr-Betrieb",
+          "text": "200-kW-Akkus zum Auswechseln ermöglichen einen Rund-um-die-Uhr-Betrieb bei schwersten Aufgaben."
+        },
+        "compatible": {
+          "title": "Voll kompatibel",
+          "text": "Unsere Dreipunktaufhängung der Kategorie 2, ISO 730-1, ermöglicht die Verwendung Ihrer bevorzugten Anbaugeräte."
+        }
+      },
+      "stats": {
+        "all-wheel-power": "Allradleistung",
+        "operational-time": "Betriebszeit",
+        "cargo-capacity": "Ladekapazität"
+      }
+    }
   },
   "common": {
     "metadata": {

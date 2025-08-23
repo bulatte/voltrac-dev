@@ -3,7 +3,7 @@ import React from "react";
 const Divider: React.FC = () => (
   <div
     aria-hidden="true"
-    className="pointer-events-none absolute inset-0 border-t border-white"
+    className="absolute inset-0 border-t border-white pointer-events-none"
   />
 );
 
@@ -36,7 +36,7 @@ const SwatchCard: React.FC<{
       <div
         className={`flex grow items-start justify-between w-full p-10 ${base.bg} ${base.text}`}
       >
-        <div className="flex flex-col justify-between h-full w-full items-start">
+        <div className="flex flex-col items-start justify-between w-full h-full">
           <div className={titleClass}>{title}</div>
           <div
             className={`relative flex gap-1 items-center px-1 py-0.5 ${base.text}`}
@@ -44,8 +44,8 @@ const SwatchCard: React.FC<{
             <div
               className={`absolute inset-0 rounded-xs border pointer-events-none ${base.badgeBorder}`}
             />
-            <div className="text-overline leading-none">HEX</div>
-            <div className="text-overline leading-none">
+            <div className="leading-none text-overline">HEX</div>
+            <div className="leading-none text-overline">
               {base.hex.replace("#", "").toUpperCase()}
             </div>
           </div>
@@ -57,15 +57,15 @@ const SwatchCard: React.FC<{
             key={entry.hex}
             className={`flex items-center justify-between p-10 ${entry.bg} ${entry.text}`}
           >
-            <div className="text-title-xs leading-none">{entry.label}</div>
+            <div className="leading-none text-title-xs">{entry.label}</div>
             <div
               className={`relative flex gap-1 items-center px-1 py-0.5 ${entry.text}`}
             >
               <div
                 className={`absolute inset-0 rounded-xs border pointer-events-none ${entry.badgeBorder}`}
               />
-              <div className="text-overline leading-none">HEX</div>
-              <div className="text-overline leading-none">
+              <div className="leading-none text-overline">HEX</div>
+              <div className="leading-none text-overline">
                 {entry.hex.replace("#", "").toUpperCase()}
               </div>
             </div>
@@ -169,7 +169,7 @@ const StylebasePage = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-10 p-20 relative" data-name="Stylebase">
+    <div className="relative flex flex-col p-20 gap-10" data-name="Stylebase">
       <Section>
         <div className="text-display-xl">Display XL</div>
         <div className="text-display-l">Display L</div>
@@ -177,7 +177,7 @@ const StylebasePage = () => {
         <div className="text-display-s">Display S</div>
         <div className="text-display-xs">Display XS</div>
       </Section>
-      <div className="flex gap-10 w-full">
+      <div className="flex w-full gap-10">
         <Section className="flex-1">
           <div className="text-title-xl">Title XLarge</div>
           <div className="text-title-l">Title Large</div>
@@ -185,7 +185,7 @@ const StylebasePage = () => {
           <div className="text-title-s">Title Small</div>
           <div className="text-title-xs">Title XSmall</div>
         </Section>
-        <div className="flex-1 flex flex-col">
+        <div className="flex flex-col flex-1">
           <Section>
             <div className="text-overline">Overline</div>
             <div className="text-subtitle-l">Subtitle L</div>
@@ -199,23 +199,23 @@ const StylebasePage = () => {
             <div className="text-paragraph-s">Paragraph Small</div>
           </Section>
           <Section>
-            <div className="text-numerals-xxl whitespace-pre">
+            <div className="whitespace-pre text-numerals-xxl">
               Numerals XXLarge
             </div>
-            <div className="text-numerals-xl whitespace-pre">
+            <div className="whitespace-pre text-numerals-xl">
               Numerals XLarge 798
             </div>
-            <div className="text-numerals-l whitespace-pre">
+            <div className="whitespace-pre text-numerals-l">
               Numerals Large 798
             </div>
-            <div className="text-numerals-m whitespace-pre">
+            <div className="whitespace-pre text-numerals-m">
               Numerals Medium 798
             </div>
           </Section>
         </div>
       </div>
       <Section>
-        <div className="flex flex-wrap w-full items-stretch">
+        <div className="flex flex-wrap items-stretch w-full">
           <div className="w-full md:w-1/2 lg:w-1/3">
             <SwatchCard
               title="Black"
@@ -238,7 +238,7 @@ const StylebasePage = () => {
             />
           </div>
         </div>
-        <div className="h-px w-full bg-white-25" />
+        <div className="w-full h-px bg-white-25" />
       </Section>
     </div>
   );

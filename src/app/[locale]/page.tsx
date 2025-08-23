@@ -1,9 +1,6 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import Cover from "./components/cover";
+import { setRequestLocale } from "next-intl/server";
 import { Locale } from "next-intl";
-// import Image from "next/image";
-// import Link from "next/link";
-// import { redirect, usePathname, useRouter } from "next/navigation";
+import About from "@/components/home/about";
 
 export default async function Home({
   params
@@ -15,19 +12,9 @@ export default async function Home({
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = await getTranslations("home");
-
   return (
-    <div>
-      <header>
-        <h1>{t("hello")}</h1>
-      </header>
-      <main>
-        <Cover />
-      </main>
-      <footer>
-        <p>{t("hello")}</p>
-      </footer>
-    </div>
+    <>
+      <About />
+    </>
   );
 }
