@@ -6,11 +6,17 @@ import { Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type FaqItem = {
-  title: string;
+  question: string;
   content: string;
 };
 
-const Accordion = ({ items }: { items: FaqItem[] }) => {
+const Accordion = ({
+  items,
+  className,
+}: {
+  items: FaqItem[];
+  className?: string;
+}) => {
   const [activeIndexes, setActiveIndexes] = useState<number[]>([0]);
 
   const toggleIndex = (index: number) => {
@@ -23,7 +29,7 @@ const Accordion = ({ items }: { items: FaqItem[] }) => {
   };
 
   return (
-    <div className="lg:max-w-140 -my-10">
+    <div className={cn("flex flex-col", className)}>
       {items.map((item, index) => {
         const active = activeIndexes.includes(index);
 
@@ -39,7 +45,7 @@ const Accordion = ({ items }: { items: FaqItem[] }) => {
               )}
               onClick={() => toggleIndex(index)}
             >
-              <h3 className="text-title-s">{item.title}</h3>
+              <h3 className="text-title-s">{item.question}</h3>
               <Plus
                 className={cn(
                   "size-5.5 transition-transform duration-800 ease-in-out",

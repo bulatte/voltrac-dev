@@ -46,6 +46,24 @@
     },
     "news": {
       "title": "Nachrichten"
+    },
+    "faq": {
+      "question-1": {
+        "question": "Is THOR fully autonomous or remotely controlled?",
+        "content": "THOR can operate in fully autonomous mode or be remotely controlled, depending on mission requirements and operator preference."
+      },
+      "question-2": {
+        "question": "How is THOR powered?",
+        "content": "Reprehenderit Lorem Lorem veniam amet magna nisi tempor ullamco ipsum reprehenderit."
+      },
+      "question-3": {
+        "question": "What makes THOR different from a regular tractor or military UGV?",
+        "content": "Reprehenderit Lorem Lorem veniam amet magna nisi tempor ullamco ipsum reprehenderit."
+      },
+      "question-4": {
+        "question": "What is the expected lifespan and maintenance requirement?",
+        "content": "Reprehenderit Lorem Lorem veniam amet magna nisi tempor ullamco ipsum reprehenderit."
+      }
     }
   },
   "common": {

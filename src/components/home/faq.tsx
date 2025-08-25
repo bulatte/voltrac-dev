@@ -1,43 +1,38 @@
 import Container from "@/components/common/container";
 import Accordion from "../common/accordion";
+import { NestedKey } from "@/types/common";
+import { Messages } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-const faqItems = [
-  {
-    title: "What is Voltrac?",
-    content:
-      "Voltrac is a cutting-edge platform designed to streamline your workflow and enhance productivity.",
-  },
-  {
-    title: "How does Voltrac work?",
-    content:
-      "Voltrac uses advanced algorithms and machine learning to optimize your tasks and improve efficiency.",
-  },
-  {
-    title: "What are the benefits of using Voltrac?",
-    content:
-      "Voltrac offers numerous benefits, including increased productivity, better task management, and enhanced collaboration.",
-  },
-  {
-    title: "How can I get started with Voltrac?",
-    content:
-      "Getting started with Voltrac is easy! Simply sign up for an account, and you'll be guided through the setup process.",
-  },
-  {
-    title: "Is there a free trial available?",
-    content:
-      "Yes, Voltrac offers a free trial for new users. Sign up today to get started!",
-  },
+type FaqKey = NestedKey<Messages["home"]["faq"]>;
+
+const faqKeys: FaqKey[] = [
+  "question-1",
+  "question-2",
+  "question-3",
+  "question-4",
 ];
 
-const Faq = () => (
-  <div className="border-t border-t-white-25">
-    <Container>
-      <div className="flex flex-col lg:flex-row gap-20 items-start justify-between px-[var(--cxp)] py-20 ">
-        <h2 className="text-subtitle-l">FAQ</h2>
-        <Accordion items={faqItems} />
-      </div>
-    </Container>
-  </div>
-);
+const Faq = async () => {
+  const t = await getTranslations("home.faq");
+
+  const items = faqKeys.map((key) => ({
+    question: t(`${key}.question`),
+    content: t(`${key}.content`),
+  }));
+
+  if (!items.length) return null;
+
+  return (
+    <div className="border-t border-t-white-25">
+      <Container>
+        <div className="flex flex-col lg:flex-row gap-20 items-start justify-between px-[var(--cxp)] py-20 ">
+          <h2 className="text-subtitle-l">FAQ</h2>
+          <Accordion className="lg:max-w-178 -my-10" items={items} />
+        </div>
+      </Container>
+    </div>
+  );
+};
 
 export default Faq;
