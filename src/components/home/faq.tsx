@@ -1,8 +1,9 @@
-import Container from "@/components/common/container";
-import Accordion from "../common/accordion";
-import { NestedKey } from "@/types/common";
 import { Messages } from "next-intl";
 import { getTranslations } from "next-intl/server";
+
+import Accordion from "@/components/common/accordion";
+import Container from "@/components/common/container";
+import { NestedKey } from "@/types/common";
 
 type FaqKey = NestedKey<Messages["home"]["faq"]>;
 

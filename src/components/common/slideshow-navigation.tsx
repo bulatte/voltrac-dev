@@ -14,7 +14,7 @@ const SlideshowNavigation = ({
       className="swiper-prev cursor-pointer p-2 w-auto h-auto"
       onClick={onPrev}
     />
-    <div className="swiper-line w-15 h-0.5 bg-white transition-transform" />
+    <div className="swiper-line w-15 h-[2px] bg-white transition-transform" />
     <SlideshowArrow
       className="rotate-180 swiper-next cursor-pointer p-2 w-auto h-auto"
       onClick={onNext}

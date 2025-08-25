@@ -69,6 +69,22 @@
   "common": {
     "metadata": {
       "title": "Voltrac"
+    },
+    "menu": {
+      "menu": "Menü",
+      "thor": "Thor",
+      "agriculture": "Landwirtschaft",
+      "front-line": "Frontlinie",
+      "team": "Werde Teil des Teams",
+      "news": "Nachrichten",
+      "faq": "FAQ",
+      "contact": "Kontakt",
+      "pre-order": "Jetzt vorbestellen",
+      "terms-of-service": "Nutzungsbedingungen",
+      "privacy-policy": "Datenschutzerklärung"
+    },
+    "footer": {
+      "back-to-top": "Zurück nach oben"
     }
   }
 }
