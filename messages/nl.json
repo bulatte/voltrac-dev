@@ -29,6 +29,20 @@
     "agro": {
       "title": "Landbouw",
       "description": "THOR helpt boeren efficiënter te werken door tekorten aan arbeidskrachten op te vullen, kosten te verlagen, opbrengsten te verhogen en dat alles met schone elektrische energie."
+    },
+    "team": {
+      "img-alt": "Voltrac Team Foto",
+      "title": "Kom ons team versterken",
+      "open-positions": {
+        "senior-mechanical-engineer": {
+          "title": "Senior werktuigbouwkundig ingenieur",
+          "description": "Verantwoordelijk voor het volledige hardware‑ontwerp van het voertuig."
+        },
+        "sales-manager-agriculture": {
+          "title": "Verkoopmanager (Landbouw)",
+          "description": "Beheer de volledige verkoopcyclus voor de landbouw."
+        }
+      }
     }
   },
   "common": {

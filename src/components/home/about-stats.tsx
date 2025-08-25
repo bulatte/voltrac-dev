@@ -13,7 +13,7 @@ const items = [
       </>
     ),
     suffix: "KW",
-    title: "all-wheel-power"
+    title: "all-wheel-power",
   },
   {
     stat: (
@@ -24,13 +24,13 @@ const items = [
       </>
     ),
     suffix: "H",
-    title: "operational-time"
+    title: "operational-time",
   },
   {
     stat: <SlotCounter value={4000} animateOnVisible />,
     suffix: "KG",
-    title: "cargo-capacity"
-  }
+    title: "cargo-capacity",
+  },
 ] as const;
 
 const AboutStats = () => {
@@ -47,7 +47,7 @@ const AboutStats = () => {
             <div className="text-numerals-m leading-none flex items-end">
               {item.stat}
             </div>
-            <span className="text-subtitle-l text-black-3">{item.suffix}</span>
+            <span className="text-subtitle-l text-white-25">{item.suffix}</span>
           </div>
           <p className="text-subtitle-m text-right whitespace-pre-line">
             {t(item.title)}

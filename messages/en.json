@@ -29,6 +29,20 @@
     "agro": {
       "title": "Agriculture",
       "description": "THOR helps farmers work more efficiently by filling labor gaps, cutting costs, boosting yields, and doing it all with clean electric power."
+    },
+    "team": {
+      "img-alt": "Voltrac Team Photo",
+      "title": "Join the team",
+      "open-positions": {
+        "senior-mechanical-engineer": {
+          "title": "Senior Mechanical Engineer",
+          "description": "Own the full hardware design of the vehicle."
+        },
+        "sales-manager-agriculture": {
+          "title": "Sales Manager (Agriculture)",
+          "description": "Own the full sales cycle for agriculture."
+        }
+      }
     }
   },
   "common": {

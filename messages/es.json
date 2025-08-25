@@ -29,6 +29,20 @@
     "agro": {
       "title": "Agricultura",
       "description": "THOR ayuda a los agricultores a trabajar de forma más eficiente al cubrir las carencias de mano de obra, reducir los costesy aumentar el rendimiento,haciéndolo todo con energía eléctrica limpia."
+    },
+    "team": {
+      "img-alt": "Foto del equipo de Voltrac",
+      "title": "Únete al equipo",
+      "open-positions": {
+        "senior-mechanical-engineer": {
+          "title": "Ingeniero/a Mecánico/a Senior",
+          "description": "Responsable del diseño completo del hardware del vehículo."
+        },
+        "sales-manager-agriculture": {
+          "title": "Responsable de Ventas (Agricultura)",
+          "description": "Asume todo el ciclo de ventas para el sector agrícola."
+        }
+      }
     }
   },
   "common": {
