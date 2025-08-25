@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Container from "../common/container";
+import Container from "@/components/common/container";
 import { getTranslations } from "next-intl/server";
 import { NestedKey } from "@/types/common";
 import { Messages } from "next-intl";

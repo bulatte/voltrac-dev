@@ -43,6 +43,9 @@
           "description": "Beheer de volledige verkoopcyclus voor de landbouw."
         }
       }
+    },
+    "news": {
+      "title": "Nieuws"
     }
   },
   "common": {

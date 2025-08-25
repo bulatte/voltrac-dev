@@ -1,9 +1,10 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { NestedKey } from "@/types/common";
 import { Messages, useTranslations } from "next-intl";
 import { useState } from "react";
+
+import { cn } from "@/lib/utils";
+import { NestedKey } from "@/types/common";
 
 // linked to translation objects within "home.about.benefits"
 type BenefitsKey = NestedKey<Messages["home"]["about"]["benefits"]>;
@@ -11,7 +12,7 @@ const benefitsKeys: BenefitsKey[] = [
   "reliable",
   "cost-efficient",
   "non-stop",
-  "compatible"
+  "compatible",
 ];
 
 const AboutTabs = () => {
@@ -28,7 +29,7 @@ const AboutTabs = () => {
             key={index}
             className={cn(
               "cursor-pointer transition-all duration-500 max-w-96 border-l border-white first:border-l-0 flex items-center relative delay-500",
-              active ? "flex-2 bg-white text-black" : "flex-1"
+              active ? "flex-2 bg-white text-black" : "flex-1",
             )}
             onClick={() => setActiveItem(index)}
           >
@@ -39,7 +40,7 @@ const AboutTabs = () => {
               <div
                 className={cn(
                   "grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 absolute top-full bg-white w-[calc(100%+2px)] left-[-1px]",
-                  active ? "grid-rows-[1fr] delay-800" : "grid-rows-[0fr]"
+                  active ? "grid-rows-[1fr] delay-800" : "grid-rows-[0fr]",
                 )}
               >
                 <div className="min-h-0 overflow-hidden">

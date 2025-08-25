@@ -1,13 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import Container from "../common/container";
-import { useRef, useState } from "react";
-import SlideshowArrow from "../icons/slideshow-arrow";
-import Slider, { Settings } from "react-slick";
-import SlideshowCounter from "../common/slideshow-counter";
-import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { useRef, useState } from "react";
+import Slider, { Settings } from "react-slick";
+
+import Container from "@/components/common/container";
+import SlideshowCounter from "@/components/common/slideshow-counter";
+import SlideshowNavigation from "@/components/common/slideshow-navigation";
+import { cn } from "@/lib/utils";
 
 const images = [
   {
@@ -44,17 +45,10 @@ const Agro = () => {
           <h2 className="text-subtitle-l">{t("title")}</h2>
           <div className="flex gap-20 items-center">
             <SlideshowCounter index={currentSlide} total={images.length} />
-            <div className="flex items-center has-[.swiper-prev:hover]:[&>.swiper-line]:-translate-x-2.5 has-[.swiper-next:hover]:[&>.swiper-line]:translate-x-2.5">
-              <SlideshowArrow
-                className="swiper-prev cursor-pointer p-2 w-auto h-auto"
-                onClick={() => slickRef.current?.slickPrev()}
-              />
-              <div className="swiper-line w-15 h-0.5 bg-white transition-transform" />
-              <SlideshowArrow
-                className="rotate-180 swiper-next cursor-pointer p-2 w-auto h-auto"
-                onClick={() => slickRef.current?.slickNext()}
-              />
-            </div>
+            <SlideshowNavigation
+              onPrev={() => slickRef.current?.slickPrev()}
+              onNext={() => slickRef.current?.slickNext()}
+            />
           </div>
         </div>
         <Slider

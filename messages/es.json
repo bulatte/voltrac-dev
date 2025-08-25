@@ -43,6 +43,9 @@
           "description": "Asume todo el ciclo de ventas para el sector agrícola."
         }
       }
+    },
+    "news": {
+      "title": "Noticias"
     }
   },
   "common": {

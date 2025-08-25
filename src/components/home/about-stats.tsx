@@ -1,7 +1,7 @@
 "use client";
 
-import SlotCounter from "react-slot-counter";
 import { useTranslations } from "next-intl";
+import SlotCounter from "react-slot-counter";
 
 const items = [
   {

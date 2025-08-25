@@ -43,6 +43,9 @@
           "description": "Own the full sales cycle for agriculture."
         }
       }
+    },
+    "news": {
+      "title": "News"
     }
   },
   "common": {

@@ -1,8 +1,10 @@
 import { getTranslations } from "next-intl/server";
-import Container from "../common/container";
-import AboutTabs from "./about-tabs";
 import Image from "next/image";
+
+import Container from "@/components/common/container";
+
 import AboutStats from "./about-stats";
+import AboutTabs from "./about-tabs";
 
 const About = async () => {
   const t = await getTranslations("home.about");

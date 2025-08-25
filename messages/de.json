@@ -43,6 +43,9 @@
           "description": "Übernimm den gesamten Vertriebszyklus im Agrarsektor."
         }
       }
+    },
+    "news": {
+      "title": "Nachrichten"
     }
   },
   "common": {
