@@ -25,6 +25,10 @@
         "operational-time": "Operationele tijd",
         "cargo-capacity": "Laadvermogen"
       }
+    },
+    "agro": {
+      "title": "Landbouw",
+      "description": "THOR helpt boeren efficiënter te werken door tekorten aan arbeidskrachten op te vullen, kosten te verlagen, opbrengsten te verhogen en dat alles met schone elektrische energie."
     }
   },
   "common": {

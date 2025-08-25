@@ -25,6 +25,10 @@
         "operational-time": "Operational\n time",
         "cargo-capacity": "Cargo\n capacity"
       }
+    },
+    "agro": {
+      "title": "Agriculture",
+      "description": "THOR helps farmers work more efficiently by filling labor gaps, cutting costs, boosting yields, and doing it all with clean electric power."
     }
   },
   "common": {

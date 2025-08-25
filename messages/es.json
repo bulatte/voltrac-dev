@@ -25,6 +25,10 @@
         "operational-time": "Tiempo operativo",
         "cargo-capacity": "Capacidad de carga"
       }
+    },
+    "agro": {
+      "title": "Agricultura",
+      "description": "THOR ayuda a los agricultores a trabajar de forma más eficiente al cubrir las carencias de mano de obra, reducir los costesy aumentar el rendimiento,haciéndolo todo con energía eléctrica limpia."
     }
   },
   "common": {

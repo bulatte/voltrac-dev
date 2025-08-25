@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Locale } from "next-intl";
 import About from "@/components/home/about";
+import Agro from "@/components/home/agro";
 
 export default async function Home({
   params
@@ -15,6 +16,7 @@ export default async function Home({
   return (
     <>
       <About />
+      <Agro />
     </>
   );
 }
