@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "tsc": "./node_modules/.bin/tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
