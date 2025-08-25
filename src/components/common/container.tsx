@@ -11,7 +11,7 @@ const Container = ({
 }) => (
   <div
     className={cn(
-      "max-w-7xl mx-auto",
+      "max-w-400 mx-auto",
       offset ? "lg:pl-48" : "px-[var(--cxp)]",
       className,
     )}

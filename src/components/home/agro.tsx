@@ -64,7 +64,7 @@ const Agro = () => {
           {images.map((image, index) => (
             <div key={index} className="pr-2.5 outline-none">
               <Image
-                className="w-auto aspect-[1.5] h-[25rem] object-cover"
+                className="w-auto aspect-[1.5] h-100 object-cover"
                 src={image.src}
                 width={image.width}
                 height={image.height}

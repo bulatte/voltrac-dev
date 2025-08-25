@@ -34,7 +34,7 @@ const AboutTabs = () => {
             onClick={() => setActiveItem(index)}
           >
             <div className="flex items-center">
-              <h3 className="p-5 text-subtitle-l max-w-40 whitespace-pre-line">
+              <h3 className="p-5 text-subtitle-l max-w-45 whitespace-pre-line">
                 {t(`${tkey}.title`)}
               </h3>
               <div

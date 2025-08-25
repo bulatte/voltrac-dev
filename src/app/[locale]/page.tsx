@@ -5,6 +5,7 @@ import About from "@/components/home/about";
 import Agro from "@/components/home/agro";
 import Team from "@/components/home/team";
 import News from "@/components/home/news";
+import Faq from "@/components/home/faq";
 
 export default async function Home({
   params,
@@ -22,6 +23,7 @@ export default async function Home({
       <Agro />
       <Team />
       <News />
+      <Faq />
     </>
   );
 }
