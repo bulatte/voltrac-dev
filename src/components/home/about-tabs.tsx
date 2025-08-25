@@ -28,7 +28,7 @@ const AboutTabs = () => {
           <div
             key={index}
             className={cn(
-              "cursor-pointer transition-all duration-500 max-w-96 border-l border-white first:border-l-0 flex items-center relative delay-500",
+              "cursor-pointer [transition:background-color_0.3s,flex-grow_0.8s,color_0.3s] !delay-300 max-w-96 border-l border-white first:border-l-0 flex items-center relative",
               active ? "flex-2 bg-white text-black" : "flex-1",
             )}
             onClick={() => setActiveItem(index)}
@@ -39,7 +39,7 @@ const AboutTabs = () => {
               </h3>
               <div
                 className={cn(
-                  "grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 absolute top-full bg-white w-[calc(100%+2px)] left-[-1px]",
+                  "grid grid-rows-[0fr] transition:[grid-template-rows] duration-500 absolute top-full bg-white w-[calc(100%+2px)] left-[-1px]",
                   active ? "grid-rows-[1fr] delay-800" : "grid-rows-[0fr]",
                 )}
               >
