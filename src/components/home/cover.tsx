@@ -120,9 +120,9 @@ const Cover = () => {
       </div>
 
       {mainContentVisible && (
-        <Container className="absolute inset-0 flex items-stretch">
-          <div className="flex items-end justify-end px-[var(--cxp)] pb-20 h-full">
-            <h2 className="text-display-xs">
+        <Container className="absolute inset-0 flex items-stretch flex-col [&>div]:flex-1">
+          <div className="flex px-[var(--cxp)] pb-20 h-full w-full">
+            <h2 className="flex text-display-xs lg:mt-[calc(100svh-18rem)] max-lg:!text-[12vw] mt-[calc(100svh-35vw)]">
               <TypeAnimation
                 className="after:!content-['\_'] whitespace-pre-line"
                 sequence={["The driving force\n on any field"]}

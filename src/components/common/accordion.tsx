@@ -48,7 +48,7 @@ const Accordion = ({
               <h3 className="text-title-s">{item.question}</h3>
               <Plus
                 className={cn(
-                  "size-5.5 transition-transform duration-800 ease-in-out",
+                  "size-5.5 transition-transform duration-800 ease-in-out shrink-0",
                   active ? "rotate-585" : "rotate-0",
                 )}
               />

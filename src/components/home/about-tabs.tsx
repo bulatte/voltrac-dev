@@ -20,7 +20,7 @@ const AboutTabs = () => {
   const t = useTranslations("home.about.benefits");
 
   return (
-    <div className="flex border-b border-white">
+    <div className="flex border-b border-white flex-col lg:flex-row">
       {benefitsKeys.map((tkey, index) => {
         const active = index === activeItem;
 
@@ -28,18 +28,18 @@ const AboutTabs = () => {
           <div
             key={index}
             className={cn(
-              "cursor-pointer [transition:background-color_0.3s,flex-grow_0.8s,color_0.3s] !delay-300 max-w-96 border-l border-white first:border-l-0 flex items-center relative",
+              "cursor-pointer [transition:background-color_0.3s,flex-grow_0.8s,color_0.3s] !delay-300 lg:max-w-96 border-b last:border-b-0 lg:border-b-0 lg:border-l border-white first:border-l-0 flex items-center relative",
               active ? "flex-2 bg-white text-black" : "flex-1",
             )}
             onClick={() => setActiveItem(index)}
           >
-            <div className="flex items-center">
-              <h3 className="p-5 text-subtitle-l max-w-45 whitespace-pre-line">
+            <div className="flex lg:items-center flex-col">
+              <h3 className="p-5 text-subtitle-l lg:max-w-45 whitespace-pre-line">
                 {t(`${tkey}.title`)}
               </h3>
               <div
                 className={cn(
-                  "grid grid-rows-[0fr] transition:[grid-template-rows] duration-500 absolute top-full bg-white w-[calc(100%+2px)] left-[-1px]",
+                  "grid grid-rows-[0fr] transition:[grid-template-rows] duration-500 lg:absolute top-full bg-white w-full left-0 lg:w-[calc(100%+2px)] lg:left-[-1px]",
                   active ? "grid-rows-[1fr] delay-800" : "grid-rows-[0fr]",
                 )}
               >

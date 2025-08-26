@@ -39,22 +39,24 @@ const Team = async () => {
           <div className="absolute inset-0 bg-black/20" />
         </div>
       </div>
-      <Container className="relative flex flex-col w-full flex-1 [&>div]:flex-1">
-        <div className="py-20 px-[var(--cxp)] flex justify-between min-h-full gap-10">
-          <h2 className="text-title-xl flex-1 sticky top-36 self-start">
-            {t("title")}
-          </h2>
+      <Container className="relative flex flex-col w-full flex-1 [&>div]:flex-1 [&>div]:flex">
+        <div className="py-20 px-[var(--cxp)] flex flex-col lg:flex-row justify-between min-h-full gap-10 w-full">
+          <div className="flex-1">
+            <h2 className="text-title-xl sticky top-36 self-start">
+              {t("title")}
+            </h2>
+          </div>
 
-          <div className="flex flex-col w-100 bg-white/20 backdrop-blur-xs self-start">
+          <div className="flex flex-col w-full lg:w-100 bg-white/20 backdrop-blur-xs self-end">
             {positions.map((pos, i) => (
               <a
                 href={pos.url}
                 target="_blank"
                 rel="noreferrer noopener"
                 key={i}
-                className="flex flex-col gap-5 p-10  hover:bg-white group text-white transition-all hover:text-black border-b border-b-white-25 last:border-b-0"
+                className="flex flex-col gap-5 p-5 md:p-10  hover:bg-white group text-white transition-all hover:text-black border-b border-b-white-25 last:border-b-0"
               >
-                <div className="flex items-center gap-2.5">
+                <div className="flex items-center justify-between gap-2.5">
                   <h3 className="text-title-s">
                     {t(`open-positions.${pos.tkey}.title`)}
                   </h3>
