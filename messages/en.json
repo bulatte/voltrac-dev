@@ -86,5 +86,16 @@
     "footer": {
       "back-to-top": "Back to top"
     }
+  },
+  "contact-form": {
+    "title": "Interested? Ask us anything",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone number (optional)",
+    "address": "Address (optional)",
+    "message": "Note",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success-msg": "Your message has been sent!"
   }
 }

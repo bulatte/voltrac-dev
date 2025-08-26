@@ -86,5 +86,16 @@
     "footer": {
       "back-to-top": "Terug naar boven"
     }
+  },
+  "contact-form": {
+    "title": "Wij bieden nu pre-orders en demonstraties aan",
+    "name": "Naam",
+    "email": "E-mailadres",
+    "phone": "Telefoonnummer (optioneel)",
+    "address": "Adres (optioneel)",
+    "message": "Notities",
+    "submit": "Bericht verzenden",
+    "sending": "Verzenden...",
+    "success-msg": "Uw bericht is verzonden!"
   }
 }

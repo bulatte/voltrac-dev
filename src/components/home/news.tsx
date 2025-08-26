@@ -11,7 +11,7 @@ import Container from "@/components/common/container";
 import { cn } from "@/lib/utils";
 import SlideshowNavigation from "@/components/common/slideshow-navigation";
 
-// news titles are not translated
+// news are not translated
 const items = [
   {
     title:
@@ -60,7 +60,10 @@ const News = () => {
             onSwiper={setSwiper}
           >
             {items.map((item, index) => (
-              <SwiperSlide key={index} className="max-w-[27.5rem] box-content">
+              <SwiperSlide
+                key={index}
+                className="max-w-[27.5rem] box-content last:mr-[var(--cxp)]"
+              >
                 <a
                   href={item.url}
                   target="_blank"

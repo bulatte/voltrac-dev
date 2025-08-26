@@ -86,5 +86,16 @@
     "footer": {
       "back-to-top": "Zurück nach oben"
     }
+  },
+  "contact-form": {
+    "title": "Wir bieten jetzt Vorbestellungen und Vorführungen an",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Telefonnummer (optional)",
+    "address": "Adresse (optional)",
+    "message": "Notizen",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success-msg": "Ihre Nachricht wurde gesendet!"
   }
 }

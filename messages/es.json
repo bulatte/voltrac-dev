@@ -86,5 +86,16 @@
     "footer": {
       "back-to-top": "Volver arriba"
     }
+  },
+  "contact-form": {
+    "title": "Ahora ofrecemos pedidos anticipados y demostraciones",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Número de teléfono (opcional)",
+    "address": "Dirección (opcional)",
+    "message": "Notas",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success-msg": "¡Tu mensaje ha sido enviado!"
   }
 }
