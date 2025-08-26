@@ -6,6 +6,7 @@ import Agro from "@/components/home/agro";
 import Team from "@/components/home/team";
 import News from "@/components/home/news";
 import Faq from "@/components/home/faq";
+import Cover from "@/components/home/cover";
 
 export default async function Home({
   params,
@@ -19,6 +20,7 @@ export default async function Home({
 
   return (
     <>
+      <Cover />
       <About />
       <Agro />
       <Team />

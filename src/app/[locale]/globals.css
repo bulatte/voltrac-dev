@@ -28,7 +28,8 @@
 
 @font-face {
   font-family: "Funnel Sans";
-  src: url("/fonts/FunnelSans-Light.woff2") format("woff2"),
+  src:
+    url("/fonts/FunnelSans-Light.woff2") format("woff2"),
     url("/fonts/FunnelSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -36,7 +37,8 @@
 
 @font-face {
   font-family: "Funnel Sans";
-  src: url("/fonts/FunnelSans-Regular.woff2") format("woff2"),
+  src:
+    url("/fonts/FunnelSans-Regular.woff2") format("woff2"),
     url("/fonts/FunnelSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -44,7 +46,8 @@
 
 @font-face {
   font-family: "Inter Tight";
-  src: url("/fonts/InterTight-Light.woff2") format("woff2"),
+  src:
+    url("/fonts/InterTight-Light.woff2") format("woff2"),
     url("/fonts/InterTight-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -52,7 +55,8 @@
 
 @font-face {
   font-family: "Inter Tight";
-  src: url("/fonts/InterTight-Regular.woff2") format("woff2"),
+  src:
+    url("/fonts/InterTight-Regular.woff2") format("woff2"),
     url("/fonts/InterTight-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -60,7 +64,8 @@
 
 @font-face {
   font-family: "Inter Tight";
-  src: url("/fonts/InterTight-Medium.woff2") format("woff2"),
+  src:
+    url("/fonts/InterTight-Medium.woff2") format("woff2"),
     url("/fonts/InterTight-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -68,7 +73,8 @@
 
 @font-face {
   font-family: "Inter Tight";
-  src: url("/fonts/InterTight-SemiBold.woff2") format("woff2"),
+  src:
+    url("/fonts/InterTight-SemiBold.woff2") format("woff2"),
     url("/fonts/InterTight-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -76,7 +82,8 @@
 
 @font-face {
   font-family: "Inter Tight";
-  src: url("/fonts/InterTight-Bold.woff2") format("woff2"),
+  src:
+    url("/fonts/InterTight-Bold.woff2") format("woff2"),
     url("/fonts/InterTight-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -323,5 +330,21 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* header slide in when cover animation ends */
+body {
+  &:has(.home-cover) {
+    header {
+      transform: translateY(-100%);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+
+  &:has(.home-cover--animated) {
+    header {
+      transform: translateY(0);
+    }
   }
 }
