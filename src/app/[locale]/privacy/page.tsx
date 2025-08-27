@@ -304,7 +304,7 @@ const PrivacyPolicy = async ({
 
   return (
     <Container>
-      <div className="px-[var(--cxp)] py-20 prose w-full max-w-full prose-invert">
+      <div className="px-[var(--cxp)] pt-30 pb-cyp prose w-full max-w-full prose-invert">
         <Translations locale={locale} />
       </div>
     </Container>

@@ -25,7 +25,7 @@ const Team = async () => {
   const t = await getTranslations("home.team");
 
   return (
-    <div className="min-h-svh relative flex flex-col">
+    <div id="team" className="min-h-svh relative flex flex-col">
       <div className="absolute inset-0">
         <div className="h-svh sticky top-0">
           <div className="relative w-full h-full">
@@ -40,9 +40,9 @@ const Team = async () => {
         </div>
       </div>
       <Container className="relative flex flex-col w-full flex-1 [&>div]:flex-1 [&>div]:flex">
-        <div className="py-20 px-[var(--cxp)] flex flex-col lg:flex-row justify-between min-h-full gap-10 w-full">
+        <div className="py-cyp px-[var(--cxp)] flex flex-col lg:flex-row justify-between min-h-full gap-10 w-full">
           <div className="flex-1">
-            <h2 className="text-title-xl sticky top-36 self-start">
+            <h2 className="text-title-xl sticky top-24 lg:top-36 self-start">
               {t("title")}
             </h2>
           </div>

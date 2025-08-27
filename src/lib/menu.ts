@@ -1,3 +1,4 @@
+import { faqKeys } from "@/components/home/faq";
 import { Messages } from "next-intl";
 
 type MenuItemTKey = keyof Messages["common"]["menu"];
@@ -8,6 +9,8 @@ type MenuItem = {
   secondary?: boolean;
 };
 
+const hasFaqs = faqKeys.length > 0;
+
 export const menu: MenuItem[] = [
   {
     tkey: "thor",
@@ -17,10 +20,10 @@ export const menu: MenuItem[] = [
     tkey: "agriculture",
     url: "/#agriculture",
   },
-  {
-    tkey: "front-line",
-    url: "/#front-line",
-  },
+  // {
+  //   tkey: "front-line",
+  //   url: "/#front-line",
+  // },
   {
     tkey: "team",
     url: "/#team",
@@ -29,17 +32,19 @@ export const menu: MenuItem[] = [
     tkey: "news",
     url: "/#news",
   },
-  {
-    tkey: "faq",
-    url: "/#faq",
-  },
+
+  ...(hasFaqs
+    ? ([
+        {
+          tkey: "faq",
+          url: "/#faq",
+        },
+      ] as const)
+    : []),
+
   {
     tkey: "contact",
     url: "/#contact",
-  },
-  {
-    tkey: "pre-order",
-    url: "/#pre-order",
   },
   {
     tkey: "terms-of-service",
@@ -52,3 +57,5 @@ export const menu: MenuItem[] = [
     secondary: true,
   },
 ];
+
+export const LINKEDIN_URL = "https://www.linkedin.com/company/voltrac/";

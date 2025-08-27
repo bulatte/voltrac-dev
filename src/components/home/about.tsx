@@ -10,9 +10,9 @@ const About = async () => {
   const t = await getTranslations("home.about");
 
   return (
-    <div className="border-b border-b-white-25">
+    <div id="thor" className="border-b border-b-white-25">
       <Container>
-        <div className="px-[var(--cxp)] pb-20 pt-48 flex flex-col gap-20">
+        <div className="px-[var(--cxp)] pb-cyp pt-24 md:pt-48 flex flex-col gap-cyp">
           <h2 className="text-title-l">{t("title")}</h2>
           <div className="relative flex flex-col overflow-hidden border border-white">
             <AboutTabs />

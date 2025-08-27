@@ -44,7 +44,12 @@ export default async function RootLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className="dark" suppressHydrationWarning>
+    <html
+      lang={locale}
+      className="dark"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
       <head>
         <link
           rel="icon"

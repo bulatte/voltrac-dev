@@ -31,6 +31,10 @@ const images = [
 const settings: Settings = {
   variableWidth: true,
   arrows: false,
+  rows: 1,
+  adaptiveHeight: false,
+  slidesToShow: 1,
+  // infinite: false,
 };
 
 const Agro = () => {
@@ -39,11 +43,11 @@ const Agro = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="overflow-hidden">
+    <div id="agriculture" className="overflow-hidden">
       <Container>
-        <div className="px-[var(--cxp)] flex gap-5 justify-between items-center py-20">
+        <div className="px-[var(--cxp)] flex gap-5 justify-between items-center py-cyp">
           <h2 className="text-subtitle-l">{t("title")}</h2>
-          <div className="flex gap-20 items-center">
+          <div className="flex gap-5 md:gap-cyp items-center">
             <SlideshowCounter index={currentSlide} total={images.length} />
             <SlideshowNavigation
               onPrev={() => slickRef.current?.slickPrev()}
@@ -55,7 +59,7 @@ const Agro = () => {
           className={cn(
             "[&_.slick-list]:!overflow-visible",
             // left side overlay covering overflowing images
-            "before:absolute before:left-[calc(-100%-1px)] before:w-full before:h-full before:bg-black before:z-[2]",
+            "before:hidden before:lg:flex before:absolute before:left-[calc(-100%-1px)] before:w-full before:h-full before:bg-black before:z-[2]",
           )}
           ref={slickRef}
           beforeChange={(_current, next) => setCurrentSlide(next)}
@@ -64,7 +68,7 @@ const Agro = () => {
           {images.map((image, index) => (
             <div key={index} className="pr-2.5 outline-none">
               <Image
-                className="w-auto aspect-[1.5] h-100 object-cover"
+                className="w-auto aspect-[1.5] h-55 md:h-75 lg:h-100 object-cover"
                 src={image.src}
                 width={image.width}
                 height={image.height}
@@ -74,7 +78,7 @@ const Agro = () => {
           ))}
         </Slider>
 
-        <div className="px-[var(--cxp)] flex gap-5 justify-between items-center pt-20 pb-15">
+        <div className="px-[var(--cxp)] flex gap-5 justify-between items-center pt-cyp pb-15">
           <h3 className="text-title-m">{t("description")}</h3>
         </div>
       </Container>

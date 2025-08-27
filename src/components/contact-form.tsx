@@ -62,7 +62,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col gap-10">
+    <div id="contact" className="flex flex-col gap-10">
       <div className="relative">
         <h2 className={`text-title-m ${greenText ? "text-green-1" : ""}`}>
           <TypeAnimation
@@ -144,7 +144,7 @@ const ContactForm = () => {
               )}
             />
           </div>
-          <div className="flex flex-col flex-1 relative gap-5">
+          <div className="flex flex-col flex-1 relative gap-[0.9rem]">
             <FormField
               name="message"
               control={form.control}

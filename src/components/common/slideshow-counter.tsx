@@ -46,7 +46,7 @@ const SlideshowCounter = ({
   }, [index, total]);
 
   return (
-    <div className="text-subtitle-l flex gap-10 [&_.slot-counter-item-number]:w-2.25">
+    <div className="text-subtitle-l flex gap-2.5 md:gap-10 [&_.slot-counter-item-number]:w-2.25">
       <SlotCounter
         value={pad(current + 1)}
         animateUnchanged={false}

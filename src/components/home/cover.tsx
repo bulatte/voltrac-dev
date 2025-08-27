@@ -46,7 +46,7 @@ const AnimatedToken = ({
 
 const Cover = () => {
   const [position, setPosition] = useState<Position>("down");
-  const [ref, inView] = useInView({ threshold: 0 });
+  const [ref, inView] = useInView({ threshold: 0, triggerOnce: true });
   const [mainContentVisible, setMainContentVisible] = useState(false);
 
   const p = mainContentVisible ? "up" : position;
@@ -121,7 +121,7 @@ const Cover = () => {
 
       {mainContentVisible && (
         <Container className="absolute inset-0 flex items-stretch flex-col [&>div]:flex-1">
-          <div className="flex px-[var(--cxp)] pb-20 h-full w-full">
+          <div className="flex px-[var(--cxp)] pb-cyp h-full w-full">
             <h2 className="flex text-display-xs lg:mt-[calc(100svh-18rem)] max-lg:!text-[12vw] mt-[calc(100svh-35vw)]">
               <TypeAnimation
                 className="after:!content-['\_'] whitespace-pre-line"

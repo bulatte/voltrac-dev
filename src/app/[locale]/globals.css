@@ -24,6 +24,8 @@
   --color-green-2: #b3bb88;
   --color-green-3: #d1dbb0;
   --color-white-25: rgba(255, 255, 255, 0.25);
+
+  --spacing-cyp: var(--cyp);
 }
 
 @font-face {
@@ -127,13 +129,13 @@
     @apply font-light text-[3.75rem] leading-none tracking-[-0.05em] font-funnel;
   }
   .text-title-l {
-    @apply font-light text-[3.125rem] leading-none tracking-[-0.05em] font-funnel;
+    @apply font-light text-[2.425rem] md:text-[3.125rem] leading-none tracking-[-0.05em] font-funnel;
   }
   .text-title-m {
     @apply font-light text-[2.5rem] leading-none tracking-[-0.05em] font-funnel;
   }
   .text-title-s {
-    @apply font-normal text-2xl leading-none tracking-[-0.03em] font-funnel;
+    @apply font-normal text-[1.375rem] leading-none tracking-[-0.03em] font-funnel;
   }
   .text-title-xs {
     @apply font-normal text-[1.125rem] leading-none tracking-[-0.03em] font-funnel;
@@ -142,10 +144,10 @@
     @apply font-normal text-[1.375rem] leading-normal;
   }
   .text-paragraph-m {
-    @apply font-normal text-lg leading-normal;
+    @apply text-lg font-normal leading-normal;
   }
   .text-paragraph-s {
-    @apply font-normal text-sm leading-normal;
+    @apply text-sm font-normal leading-normal;
   }
 
   /* Support styles */
@@ -207,13 +209,16 @@
 
 &:root {
   --cxp: 1.5rem;
+  --cyp: 2.5rem;
 
   @media (min-width: 768px) {
     --cxp: 3.75rem;
+    --cyp: 3.75rem;
   }
 
   @media (min-width: 1025px) {
     --cxp: 5rem;
+    --cyp: 5rem;
   }
 }
 
@@ -333,8 +338,14 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* header slide in when cover animation ends */
 body {
+  overscroll-behavior: none;
+
   &:has(.home-cover) {
     header {
       transform: translateY(-100%);

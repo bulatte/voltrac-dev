@@ -9,9 +9,9 @@ const Divider: React.FC = () => (
 
 const Section: React.FC<React.PropsWithChildren<{ className?: string }>> = ({
   children,
-  className = ""
+  className = "",
 }) => (
-  <div className={`relative flex flex-col gap-10 py-20 ${className}`}>
+  <div className={`relative flex flex-col gap-10 py-cyp ${className}`}>
     <Divider />
     {children}
   </div>
@@ -83,29 +83,29 @@ const StylebasePage = () => {
       hex: "#000000",
       bg: "bg-black",
       text: "text-white",
-      badgeBorder: "border-white"
+      badgeBorder: "border-white",
     },
     {
       label: "Tint 1",
       hex: "#0F0F0F",
       bg: "bg-black-1",
       text: "text-white",
-      badgeBorder: "border-white"
+      badgeBorder: "border-white",
     },
     {
       label: "Tint 2",
       hex: "#1A1919",
       bg: "bg-black-2",
       text: "text-white",
-      badgeBorder: "border-white"
+      badgeBorder: "border-white",
     },
     {
       label: "Tint 3",
       hex: "#2F2E2E",
       bg: "bg-black-3",
       text: "text-white",
-      badgeBorder: "border-white"
-    }
+      badgeBorder: "border-white",
+    },
   ];
   const whiteSwatches: Swatch[] = [
     {
@@ -113,29 +113,29 @@ const StylebasePage = () => {
       hex: "#FFFFFF",
       bg: "bg-white",
       text: "text-black",
-      badgeBorder: "border-black"
+      badgeBorder: "border-black",
     },
     {
       label: "Shade 1",
       hex: "#F0F0F0",
       bg: "bg-white-1",
       text: "text-black",
-      badgeBorder: "border-black"
+      badgeBorder: "border-black",
     },
     {
       label: "Shade 2",
       hex: "#D5D7D4",
       bg: "bg-white-2",
       text: "text-black",
-      badgeBorder: "border-black"
+      badgeBorder: "border-black",
     },
     {
       label: "Shade 3",
       hex: "#B3B6B1",
       bg: "bg-white-3",
       text: "text-black",
-      badgeBorder: "border-black"
-    }
+      badgeBorder: "border-black",
+    },
   ];
   const greenSwatches: Swatch[] = [
     {
@@ -143,33 +143,33 @@ const StylebasePage = () => {
       hex: "#4B5320",
       bg: "bg-green",
       text: "text-white",
-      badgeBorder: "border-white"
+      badgeBorder: "border-white",
     },
     {
       label: "Tint 1",
       hex: "#8F985F",
       bg: "bg-green-1",
       text: "text-black",
-      badgeBorder: "border-black"
+      badgeBorder: "border-black",
     },
     {
       label: "Tint 2",
       hex: "#B3BB88",
       bg: "bg-green-2",
       text: "text-black",
-      badgeBorder: "border-black"
+      badgeBorder: "border-black",
     },
     {
       label: "Tint 3",
       hex: "#D1DBB0",
       bg: "bg-green-3",
       text: "text-black",
-      badgeBorder: "border-black"
-    }
+      badgeBorder: "border-black",
+    },
   ];
 
   return (
-    <div className="relative flex flex-col p-20 gap-10" data-name="Stylebase">
+    <div className="relative flex flex-col p-cyp gap-10" data-name="Stylebase">
       <Section>
         <div className="text-display-xl">Display XL</div>
         <div className="text-display-l">Display L</div>

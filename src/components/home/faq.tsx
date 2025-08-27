@@ -7,7 +7,7 @@ import { NestedKey } from "@/types/common";
 
 type FaqKey = NestedKey<Messages["home"]["faq"]>;
 
-const faqKeys: FaqKey[] = [
+export const faqKeys: FaqKey[] = [
   "question-1",
   "question-2",
   "question-3",
@@ -25,9 +25,9 @@ const Faq = async () => {
   if (!items.length) return null;
 
   return (
-    <div className="border-t border-t-white-25">
+    <div id="faq" className="border-t border-t-white-25">
       <Container>
-        <div className="flex flex-col lg:flex-row gap-20 items-start justify-between px-[var(--cxp)] py-20 ">
+        <div className="flex flex-col lg:flex-row gap-cyp items-start justify-between px-[var(--cxp)] py-cyp">
           <h2 className="text-subtitle-l">FAQ</h2>
           <Accordion className="lg:max-w-178 -my-10" items={items} />
         </div>

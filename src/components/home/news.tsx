@@ -31,9 +31,9 @@ const News = () => {
   const t = useTranslations("home.news");
 
   return (
-    <div className="w-full overflow-hidden">
+    <div id="news" className="w-full overflow-hidden">
       <Container>
-        <div className="px-[var(--cxp)] py-20 flex items-center justify-between gap-2.5">
+        <div className="px-[var(--cxp)] py-cyp flex items-center justify-between gap-2.5">
           <h2 className="text-subtitle-l">{t("title")}</h2>
 
           {items.length > 3 && (
@@ -48,9 +48,9 @@ const News = () => {
           className={cn(
             "relative",
             // left side overlay covering overflowing images
-            "before:absolute before:left-[calc(-100%-1px)] before:w-full before:h-full before:bg-black before:z-[2]",
+            "before:hidden lg:before:flex before:absolute before:left-[calc(-100%-1px)] before:w-full before:h-full before:bg-black before:z-[2]",
             // line above text
-            "after:absolute after:left-0 after:w-screen after:top-[25rem] after:h-[1px] after:bg-white-25 after:z-[2]",
+            "after:absolute after:left-0 after:w-screen after:top-72 md:after:top-100 after:h-[1px] after:bg-white-25 after:z-[2]",
           )}
         >
           <Swiper
@@ -62,13 +62,13 @@ const News = () => {
             {items.map((item, index) => (
               <SwiperSlide
                 key={index}
-                className="max-w-[27.5rem] box-content last:mr-[var(--cxp)]"
+                className="max-w-70 md:max-w-[27.5rem] box-content last:mr-[var(--cxp)]"
               >
                 <a
                   href={item.url}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="flex flex-col gap-10"
+                  className="flex flex-col gap-5 md:gap-10"
                 >
                   <div className="w-full pl-[var(--cxp)]">
                     <Image
@@ -80,7 +80,7 @@ const News = () => {
                     />
                   </div>
                   <div className="flex justify-between gap-2.5 pl-[var(--cxp)] pt-10">
-                    <h3 className="text-title-s pb-20">{item.title}</h3>
+                    <h3 className="text-title-s pb-cyp">{item.title}</h3>
                     <ArrowUpRight className="shrink-0" />
                   </div>
                 </a>
