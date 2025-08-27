@@ -5,7 +5,7 @@ export const locales = ["en", "es", "de", "nl"] as const;
 export const routing = defineRouting({
   locales,
   defaultLocale: "en",
-  // localePrefix: "never",
+  localePrefix: "as-needed",
   domains: [
     {
       domain: "timerzap.com",
