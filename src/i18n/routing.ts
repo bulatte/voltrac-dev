@@ -8,24 +8,45 @@ export const routing = defineRouting({
   localePrefix: "as-needed",
   domains: [
     {
-      domain: "timerzap.com",
+      domain: "voltrac.eu",
       locales: ["en"],
       defaultLocale: "en",
     },
     {
-      domain: "es.timerzap.com",
+      domain: "voltrac.es",
       locales: ["es"],
       defaultLocale: "es",
     },
     {
-      domain: "de.timerzap.com",
+      domain: "voltrac.de",
       locales: ["de"],
       defaultLocale: "de",
     },
     {
-      domain: "nl.timerzap.com",
+      domain: "voltrac.nl",
       locales: ["nl"],
       defaultLocale: "nl",
     },
+
+    // {
+    //   domain: "timerzap.com",
+    //   locales: ["en"],
+    //   defaultLocale: "en",
+    // },
+    // {
+    //   domain: "es.timerzap.com",
+    //   locales: ["es"],
+    //   defaultLocale: "es",
+    // },
+    // {
+    //   domain: "de.timerzap.com",
+    //   locales: ["de"],
+    //   defaultLocale: "de",
+    // },
+    // {
+    //   domain: "nl.timerzap.com",
+    //   locales: ["nl"],
+    //   defaultLocale: "nl",
+    // },
   ],
 });

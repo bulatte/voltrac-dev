@@ -18,8 +18,6 @@ const LanguageSwitcher = () => {
   const pathname = usePathname();
   const params = useParams();
 
-  console.log(routing.domains);
-
   function onSelectChange(nextLocale: Locale) {
     const nextDomain = routing.domains!.find(
       (d) => d.defaultLocale === nextLocale,
