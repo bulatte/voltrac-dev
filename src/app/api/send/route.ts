@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     const { error } = await resend.emails.send({
       from: "Voltrac <tom@voltrac.eu>",
-      to: ["abulatg@gmail.com"],
+      to: ["info@voltrac.eu"],
       subject: `Voltrac - New Message from ${values.data.name}`,
       react: EmailTemplate(values.data),
     });
