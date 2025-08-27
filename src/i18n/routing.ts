@@ -7,22 +7,22 @@ export const routing = defineRouting({
   defaultLocale: "en",
   domains: [
     {
-      domain: "voltrac.eu",
+      domain: "timerzap.com",
       locales: ["en"],
       defaultLocale: "en",
     },
     {
-      domain: "voltrac.es",
+      domain: "es.timerzap.com",
       locales: ["es"],
       defaultLocale: "es",
     },
     {
-      domain: "voltrac.de",
+      domain: "de.timerzap.com",
       locales: ["de"],
       defaultLocale: "de",
     },
     {
-      domain: "voltrac.nl",
+      domain: "nl.timerzap.com",
       locales: ["nl"],
       defaultLocale: "nl",
     },
